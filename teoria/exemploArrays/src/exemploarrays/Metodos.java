@@ -18,8 +18,17 @@ public class Metodos {
     
     public void amosarArray (float []temperaturas) {
         for(int i = 0; i < temperaturas.length; i++) {
-            System.out.println("Temperatura posicion " +  i + ": "+ temperaturas[i]);
+            System.out.println("Temperatura posicion " +  i + ": " + temperaturas[i]);
         }
+    }
+    public void amosarArraySegundoMetodo (float []temperaturas) {
+        // for each: mas facil y especial para recorrer colleciones (solo deben de ser de objetos)
+        /* coge un dato basico (temperaturas) y lo pasa a un dato referenciado (elemento).
+        Los dos puntos funcionamiento: cogen el array temperatura, lo va recorriendo dato a dato y cada uno de los
+        datos los va pasando a la array elemento.
+        */
+        for(Float elemento:temperaturas) // siempre lo tiene que meter en una clase (en este caso: Float) 
+            System.out.println("****" + elemento);
     }
     
     // Temperatura del martes? (posicion 1 programador <-> posicion 2 usuario
