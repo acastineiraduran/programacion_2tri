@@ -1,11 +1,12 @@
 
 package exemploarrays;
 
+import java.util.Arrays;
 import nosaLibreria.PedirDatos;
 
 public class Metodos {
+    float []temperaturas = new float [5];
     public float[] crearArrayFloat(){
-        float []temperaturas = new float [5];
         for(int i = 0; i < temperaturas.length; i++){
             /* previamente tenemos que importar nuestra libreria en el repo Libraries
              clean and build (nosaLibreria proyecto); click derecho Libraries
@@ -36,4 +37,40 @@ public class Metodos {
         System.out.println("La posicion " + posicion + " corresponde con la Ta: " + temperaturas[posicion -1]);
     }
     
+    // Buscar elementos
+    public void buscarElemento(float []temperaturas){
+        int atopado = 0; // non se atopou o elemento
+        float eleBuscar = PedirDatos.pedirFloat("numero a buscar");
+        for (int i = 0; i < temperaturas.length; i++){
+            if (eleBuscar == temperaturas [i]){
+                System.out.println("A temperatura esta na posicio" + (i+1));
+                atopado = 1;
+                break;
+            }
+        }
+        if (atopado == 0)
+            System.out.println("esta temperatura non esta na lista");
+    }
+    
+    // Ordenacion
+    public void ordenacion (float [] temperaturas) {
+        float aux;
+        for (int i = 0; i < temperaturas.length; i++){
+            for (int j = i + 1; j < temperaturas.length; j++){
+                if (temperaturas[i] > temperaturas[j]){
+                aux = temperaturas [i];
+                temperaturas [i] = temperaturas [j];
+                temperaturas [j] = aux;
+                }
+            }
+        }
+        System.out.println("Array ordenada");
+    }
+    
+    public void ordenacionSegundo (float [] temperaturas) {
+        Arrays.sort(temperaturas); // hace los mismo que el de ordenacion
+        System.out.println("Array ordenado");
+    }
+    
+   
 }
