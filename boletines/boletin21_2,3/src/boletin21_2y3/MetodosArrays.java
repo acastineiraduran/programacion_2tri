@@ -1,5 +1,5 @@
 
-package boletin21_2;
+package boletin21_2y3;
 
 import java.util.Arrays;
 import nosaLibreria.PedirDatos;
