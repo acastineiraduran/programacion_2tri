@@ -42,4 +42,47 @@ public class Metodos {
         this.media = this.sumaNotas / this.arrayNotas.length;
         System.out.println("Nota media = " + this.media);
     }
+    
+    public void notaAlta(){
+        MetodosArrays obx = new MetodosArrays();
+        obx.ordenacion(this.arrayNotas);
+        System.out.println("Nota mas alta = "  + arrayNotas[arrayNotas.length - 1]);
+    }
+    
+    public void notaAlumnoPedido(String alumno){
+        for (int i = 0; i < arrayNomes.length; i++){
+            if (this.arrayNomes[i] == alumno){
+                System.out.println("La nota de " + arrayNomes[i] +
+                        " es " + arrayNotas[i]);
+            }
+        }
+        
+    }
+    
+    
+    public void nomeAprobado (){
+        System.out.println("Los alumnos aprobados son:");
+        for (int i = 0; i < this.arrayNotas.length; i++){
+            if (this.arrayNotas[i] >= 5){
+                System.out.println(arrayNomes[i]);
+            }
+        }
+    }
+    
+    public void odenacion (){
+        MetodosArrays obx = new MetodosArrays();
+        obx.ordenacion(this.arrayNotas);
+        for (int i = 0; i < arrayNotas.length; i++){
+            System.out.println(arrayNotas[i]);
+        }
+    }
+    
+    public void notaAlumno(){
+        for (int i = 0; i < arrayNomes.length; i++){
+            if (this.arrayNomes[i] == "angel"){ // en teoria no deberia dejar, pq deja??
+                System.out.println("La nota de " + arrayNomes[i] +
+                        " es " + arrayNotas[i]);
+            }
+        }
+    }
 }
