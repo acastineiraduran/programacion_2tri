@@ -17,6 +17,8 @@ public class Boletin21_1 {
         // TODO code application logic here
         Metodos obx = new Metodos();
         obx.arrayAleatoria();
+        
+        // Falta visualizar el arreglo al reves
     }
     
 }

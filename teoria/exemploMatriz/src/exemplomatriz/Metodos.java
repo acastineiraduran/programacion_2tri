@@ -13,6 +13,11 @@ public class Metodos {
     float sumaColumna;
     float mediaFilas;
 
+    /*
+    Hizo metodo en clase para cambiar enteramente una fila y una columna???? -> 
+    preguntar NINA si lo puede pasar: paso marcos foto por el grupo
+    */
+    
     public float[][] crearMatriz() {
         for (int i = 0; i < notas.length; i++) {
             for (int j = 0; j < notas[i].length; j++) {

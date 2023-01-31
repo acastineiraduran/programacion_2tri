@@ -59,7 +59,7 @@ public class Metodos {
      */
     public void notaAlta(){
         MetodosArrays obx = new MetodosArrays();
-        obx.ordenacion(this.arrayNotas);
+        obx.ordenacion(this.arrayNotas); // Arrays.sort (notas) // para ordenar
         System.out.println("Nota mas alta = "  + arrayNotas[arrayNotas.length - 1]);
     }
     
@@ -97,7 +97,11 @@ public class Metodos {
      */
     public void odenacion (){
         MetodosArrays obx = new MetodosArrays();
-        obx.ordenacion(this.arrayNotas);
+        obx.ordenacion(this.arrayNotas); /* los aux los declaramos antes
+        del for porque cuando la declaramos estamos cogiendo un espacio en memoria del 
+        tamaño de las interaciones - siempre que tengo varias listas. si la declaro antes del for
+        estoy solo declarando 1 espacio en memoria.
+        */
         for (int i = 0; i < arrayNotas.length; i++){
             System.out.println(arrayNotas[i]);
         }
@@ -109,7 +113,11 @@ public class Metodos {
      */
     public void notaAlumno(){
         for (int i = 0; i < arrayNomes.length; i++){
-            if (this.arrayNomes[i] == "angel"){ // porque me deja con esto??
+            if (this.arrayNomes[i].equals("angel3")){ // porque me deja con == en vez de equals
+                /*
+                me deja eso porque esta apuntando a la misma direccion de memoria creo 
+                pero no tiene mucho sentido, aunque me funcione el programa en esta ocasion
+                */
                 System.out.println("La nota de " + arrayNomes[i] +
                         " es " + arrayNotas[i]);
             }

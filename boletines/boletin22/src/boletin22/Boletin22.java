@@ -21,6 +21,13 @@ public class Boletin22 {
         Metodos obx = new Metodos();
         int golesMarcados[ ][ ] = obx.creaArray();
         obx.mostrarArray(); 
+        
+        /**
+         * Ejercicio 2
+         */
+        System.out.println("");
+        obx.equiposGoles();
+        obx.verGolesEquipos();
     }
     
 }

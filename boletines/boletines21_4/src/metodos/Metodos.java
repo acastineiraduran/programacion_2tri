@@ -13,6 +13,7 @@ public class Metodos {
     private String letraDNI;
     private static final int CONSTANTE = 23;
     // las ordene por excel, vale????
+    // mejor hacerlo con char en vez de String
     String asociacionLetras[ ] = {"T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E"};
     
     /**
