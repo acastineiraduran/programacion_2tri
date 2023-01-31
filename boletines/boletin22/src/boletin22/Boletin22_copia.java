@@ -11,7 +11,7 @@ import metodos.Metodos;
  *
  * @author casty
  */
-public class Boletin22 {
+public class Boletin22_copia {
 
     /**
      * @param args the command line arguments
@@ -28,14 +28,12 @@ public class Boletin22 {
         System.out.println("");
         obx.equiposGoles();
             
-        //obx.verGolesEquipos();
         //obx.ordenarMatriz(obx.golesEquipo);
         
         System.out.println(Arrays.toString(obx.golesEquipo));   
         
         System.out.println("\n***********");
         obx.ordenarMatriz_v2(obx.golesEquipo);
-        obx.mostrarArray();
         
     }
     
